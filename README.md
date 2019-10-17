@@ -1,4 +1,4 @@
-Cannot rename package under Include directory when the package is already there under Keywords directory
+Cannot rename a package under Include when the package already exists under Keywords
 ==============================
 
 
