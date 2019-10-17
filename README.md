@@ -34,4 +34,3 @@ It was funny to find that I could add `my.packageX` under the `Include/scripts/g
 # How significant is it?
 
 I often do refactoring of package names for code clarity. This restriction (I can not rename packages under Include/scripts/groovy) makes the refactoring difficult.
-This gives me an impression that KS being unprofessional.
