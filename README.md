@@ -11,12 +11,11 @@ You can easily reproduce the problem.
 I use JUnit inside Katalon Studio to do unit-testing over custom keywords as I described at [another post](https://forum.katalon.com/t/junit4-katalon-studio-integration-by-a-built-in-keyword/17637/5).
 During that exercise, I often need to rename Groovy packages.
 
-In the sample project, I have a Groovy package named `my.packageY` in the `Include` directory. I wanted to renamed it to `my.packageX`.
+In the sample project, I have a file `Include/scripts/groovy/my.packageY/GreeterTest.groovy`, and wanted to move it to `Included/scripts/groovy/my.packageX/GreeterTest.groovy`.
 
-I wanted to move `Include/scripts/groovy/my.packageY/GreeterTest.groovy` file to `Included/scripts/groovy/my.packageX/GreeterTest.groovy`.
-
-So, I tried to rename it using Katalon Studio's UI. In the Test Explorer, select the `Include/scripts/groovy/my.packageY` and mouse-right-click to choose `Rename` to `my.packageX`.
+I tried renaming it with Katalon Studio's UI. In the Test Explorer, select the `Include/scripts/groovy/my.packageY` and mouse-right-click to choose `Rename` to `my.packageX`.
 Then the dialog rejected renaming with message `Inputted package is already exists`.
+
 ![diaglog with error](docs/images/Inputted_name_already_exists.PNG)
 
 In the `Include/scripts/groovy` directory there is NOT a package `my.packageX`. Therefore, no reason why I can not rename `my.packageY` to `my.packageX`.
